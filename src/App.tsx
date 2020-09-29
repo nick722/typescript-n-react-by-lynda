@@ -4,21 +4,19 @@ import './App.css';
 
 class App extends Component {
   render() {
+    // let firstValue: string = 'Piper';
+    // let firstValue: number = 37;
+    // let firstValue: boolean = true;
+    // let firstValue: number[] = [1,2,3];
+    let firstValue: Array<string> = ['Piper', 'Curie', 'Cait'];
+
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            The value {firstValue} is of {typeof firstValue} type!
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
         </header>
       </div>
     );
