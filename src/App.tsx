@@ -4,18 +4,23 @@ import './App.css';
 
 class App extends Component {
   render() {
-    // let firstValue: string = 'Piper';
-    // let firstValue: number = 37;
-    // let firstValue: boolean = true;
-    // let firstValue: number[] = [1,2,3];
-    let firstValue: Array<string> = ['Piper', 'Curie', 'Cait'];
+    // tuple
+    let aTuple: [string, number] = ['Piper', 37];
+    // enum
+    enum Codes {fist = 1, second = 'Curie'}
+    // any
+    let firstName: any =  37
+    // void
+    const warning = (): void => {
+      console.log('Warning');
+    }
 
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            The value {firstValue} is of {typeof firstValue} type!
+            The value {firstName} is of {typeof firstName} type!
           </p>
         </header>
       </div>
